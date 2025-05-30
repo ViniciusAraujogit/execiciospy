@@ -4,6 +4,6 @@ def calcular_idade (ano_nascimento: int, ano_atual: int):
     return idade_dias
 
 anoNascimento = int (input("Digite o seu ano de nascimento: "))
-anoAtual = int (input("Digite o ano atual:"))
+anoAtual = int (input("Digite o ano atual: "))
 
 print (f"Idade aproximada em dias: {calcular_idade(anoNascimento, anoAtual)}")
