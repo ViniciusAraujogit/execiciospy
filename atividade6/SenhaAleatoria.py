@@ -1,9 +1,10 @@
 import random
+import string
 
 tamanho = int(input("Digite o tamanho da senha: "))
 
-caracteres =  ["!","@","#","$","%","¨","&","*","-","+","/","?"]
+caracteres = string.ascii_letters + string.digits + string.punctuation
 
-aleatorio = ''.join(random.sample(caracteres, k=tamanho))
+senha = ''.join(random.choices(caracteres, k=tamanho))
 
-print(f"Senha aleatoria com carecteres especiais gerada: {aleatorio}")
+print(f"Senha aleatória gerada: {senha}")
